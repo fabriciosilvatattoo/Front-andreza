@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Outfit:wght@100;300;400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-tertiary-container: #fe00fe;
+  --color-on-primary: #480079;
+  --color-error: #ff6e84;
+  --color-on-secondary-fixed-variant: #591bdc;
+  --color-on-error-container: #ffb2b9;
+  --color-secondary-fixed: #d8caff;
+  --color-on-background: #f2effa;
+  --color-surface-variant: #252530;
+  --color-on-error: #490013;
+  --color-error-dim: #d73357;
+  --color-on-primary-fixed: #000000;
+  --color-secondary-container: #591adc;
+  --color-on-tertiary-fixed: #320032;
+  --color-outline: #76747e;
+  --color-inverse-primary: #8d00e6;
+  --color-primary: #cf96ff;
+  --color-surface-bright: #2b2b37;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container: #191922;
+  --color-tertiary: #ff51fa;
+  --color-surface-container-highest: #252530;
+  --color-inverse-surface: #fcf8ff;
+  --color-on-surface: #f2effa;
+  --color-primary-dim: #a533ff;
+  --color-surface-container-low: #13131b;
+  --color-surface-tint: #cf96ff;
+  --color-on-secondary: #25006b;
+  --color-on-tertiary: #400040;
+  --color-on-tertiary-fixed-variant: #6a006a;
+  --color-error-container: #a70138;
+  --color-on-primary-fixed-variant: #450074;
+  --color-surface: #0e0d15;
+  --color-on-secondary-container: #e4daff;
+  --color-tertiary-fixed-dim: #ff61f8;
+  --color-primary-fixed-dim: #bc6fff;
+  --color-background: #0e0d15;
+  --color-surface-container-high: #1f1f29;
+  --color-outline-variant: #484750;
+  --color-secondary-fixed-dim: #cabaff;
+  --color-inverse-on-surface: #55545d;
+  --color-secondary-dim: #7e51ff;
+  --color-secondary: #a68cff;
+  --color-on-tertiary-container: #230023;
+  --color-tertiary-dim: #ff51fa;
+  --color-on-surface-variant: #acaab4;
+  --color-primary-fixed: #c683ff;
+  --color-tertiary-fixed: #ff81f5;
+  --color-primary-container: #c683ff;
+  --color-surface-dim: #0e0d15;
+  --color-on-primary-container: #37005f;
+  --color-on-secondary-fixed: #3b00a0;
+
+  --font-headline: "Newsreader", serif;
+  --font-body: "Outfit", sans-serif;
+  --font-label: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(25, 25, 34, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .neon-glow-primary {
+    box-shadow: 0 0 15px rgba(207, 150, 255, 0.15);
+  }
+  .status-glow-hot {
+    box-shadow: 0 0 10px rgba(255, 81, 250, 0.4);
+  }
+  .status-glow-warm {
+    box-shadow: 0 0 10px rgba(207, 150, 255, 0.4);
+  }
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-outline-variant); border-radius: 10px; }
